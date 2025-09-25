@@ -29,4 +29,4 @@ Currently, I’m pursuing my **Master’s in Applied Data Science** at the Unive
 
 ---
 
-⭐️ Feel free to connect with me on [LinkedIn](www.linkedin.com/in/p-shesadree-b066ab203) or reach out to collaborate on exciting AI/Data Science projects!  
+⭐️ Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/p-shesadree-b066ab203/) or reach out to collaborate on exciting AI/Data Science projects!  
