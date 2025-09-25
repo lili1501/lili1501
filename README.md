@@ -1,4 +1,4 @@
-# 👾 Hi, I'm P Shesadree  
+# 👾 Hi, I'm Shesadree  
 
 ## 🚀 About Me  
 I’m a data enthusiast with a background in **Electrical Engineering** and professional experience as a **Data Analyst**.  
