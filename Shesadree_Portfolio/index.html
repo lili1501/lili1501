@@ -1,0 +1,209 @@
+<!-- Okay, Shesadree! Here's a complete HTML and CSS portfolio website based on your resume summary, designed to be visually stunning, modern, professional, clean, and responsive with a dark-mode theme and sticky navigation.
+
+This solution includes:
+1.  **`index.html`**: The main structure and content.
+2.  **`style.css`**: All the styling for a dark-mode theme, modern layout, and responsiveness.
+3.  **`script.js`**: A small script for the mobile navigation (hamburger menu).
+
+---
+
+### 1. `index.html` (HTML Structure and Content) -->
+
+<!-- ```html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shesadree Priyadarshani - Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Poppins for body, Montserrat for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Shesadree P.</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Shesadree Priyadarshani</h1>
+                <p class="tagline">Data Scientist | AI & ML Enthusiast</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">Get in Touch</a>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="edu-item card">
+                    <h3>Master’s in Applied Data Science</h3>
+                    <p class="institution">University of Florida</p>
+                    <p class="duration">Aug 2025 – May 2027</p>
+                    <h4>Key Coursework:</h4>
+                    <ul class="coursework-list">
+                        <li>Advanced ML</li>
+                        <li>Applied Data Science</li>
+                        <li>Programming for DS</li>
+                        <li>AI Ethics</li>
+                    </ul>
+                </div>
+                <div class="edu-item card">
+                    <h3>B.Tech in Electrical Engineering</h3>
+                    <p class="institution">National Institute of Technology Rourkela</p>
+                    <p class="duration">Aug 2019 – May 2023</p>
+                    <p class="gpa">GPA: 8.26/10.0</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <h3>Decision Analyst I – Data Science and AI Solutions</h3>
+                        <p class="company">Bristol Myers Squibb</p>
+                    </div>
+                    <p class="duration">Apr 2024 – Jul 2025</p>
+                    <ul>
+                        <li>Developed ML models, improving forecast accuracy by 15% and driving $2M+ ROI.</li>
+                        <li>Automated Python analytics pipelines, integrating 5+ global data sources.</li>
+                        <li>Applied test-control design, increasing efficiency by 25%.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <h3>Decision Analytics Associate – Multi-Channel Marketing</h3>
+                        <p class="company">ZS Associates</p>
+                    </div>
+                    <p class="duration">Jul 2023 – Apr 2024</p>
+                    <ul>
+                        <li>Engineered 4 ETL pipelines (SQL, R, Excel), speeding data extraction by 30%.</li>
+                        <li>Used R for statistical analysis, reducing manual reporting by 20%.</li>
+                        <li>Developed 5+ interactive Tableau dashboards for real-time visualization.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item card">
+                    <div class="timeline-header">
+                        <h3>Summer Intern</h3>
+                        <p class="company">Tata Steel Long Products</p>
+                    </div>
+                    <p class="duration">Jun 2022 – Aug 2022</p>
+                    <ul>
+                        <li>Analyzed time-series data with regression models, improving power generation efficiency by 4.1%.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item card">
+                    <h3>Automated PCB Test Plan Generation</h3>
+                    <p class="date">Sep 2025</p>
+                    <p>Designed Python-based pipeline using LLM for PCB test plan generation, accelerating validation.</p>
+                </div>
+                <div class="project-item card">
+                    <h3>IoT-Based Automatic Vehicle Accident Detection and Rescue Model</h3>
+                    <p class="date">Aug 2022 – May 2023</p>
+                    <p>Developed IoT system with PySpark ML, achieving 18% higher accuracy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3><i class="fas fa-brain"></i> Data Science & ML</h3>
+                    <ul>
+                        <li>Regression & Classification</li>
+                        <li>Predictive Modeling</li>
+                        <li>Time Series Forecasting</li>
+                        <li>Clustering</li>
+                        <li>LLM</li>
+                        <li>Deep Learning</li>
+                        <li>Quantitative Analysis</li>
+                        <li>PySpark</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope icon"></i> <a href="mailto:pshesadree151@gmail.com">pshesadree151@gmail.com</a></p>
+                <p><i class="fas fa-phone icon"></i> <a href="tel:+13523281832">+1 (352) 328-1832</a></p>
+                <p><i class="fab fa-linkedin icon"></i> <a href="https://www.linkedin.com/in/p-shesadree" target="_blank" rel="noopener noreferrer">p-shesadree (LinkedIn)</a></p>
+            </div>
+            <div class="contact-form">
+                <p>Feel free to reach out to discuss potential collaborations or opportunities!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="current-year"></span> Shesadree Priyadarshani. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Dynamically set current year for the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
+<!-- ### How to Use: -->
+
+<!-- 1.  **Create a folder** for your website (e.g., `shesadree-portfolio`).
+2.  Inside this folder, create three files:
+    *   `index.html`
+    *   `style.css`
+    *   `script.js`
+3.  **Copy and paste** the respective code into each file.
+4.  **Open `index.html`** in your web browser to see your portfolio website!
+
+This setup provides a modern, clean, dark-themed portfolio that is both aesthetically pleasing and functional across various devices. Good luck, Shesadree! -->

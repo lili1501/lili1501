@@ -1,0 +1,183 @@
+<!-- Here's a complete HTML and CSS portfolio website based on the provided resume summary, incorporating all your structural and aesthetic requirements.
+
+**File 1: `index.html`**
+
+```html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shesadree Priyadarshani - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-left">
+            <!-- Placeholder for circular profile image -->
+            <img src="https://via.placeholder.com/40/FFD1DC/FFFFFF?text=SP" alt="Shesadree Priyadarshani" class="profile-img">
+            <span>Shesadree Priyadarshani</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Fixed Social Media Sidebar -->
+    <aside id="social-sidebar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/p-shesadree" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <!-- Placeholder links for other social media -->
+            <li><a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.youtube.com/yourchannel" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <h1>Shesadree Priyadarshani</h1>
+            <p>Data Scientist & Machine Learning Engineer</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="card">
+                        <h4>University of Florida</h4>
+                        <p>Master’s in Applied Data Science (Aug 2025 – May 2027)</p>
+                        <ul>
+                            <li>Coursework: Advanced Machine Learning, Applied Data Science, Programming for DS, Mathematics for Data Science, AI Ethics</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>National Institute of Technology Rourkela</h4>
+                        <p>B.Tech in Electrical Engineering (Aug 2019 – May 2023)</p>
+                        <p>GPA: 8.26/10.0</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>Experience</h3>
+                    <div class="card">
+                        <h4>Decision Analyst I – Data Science and AI solutions, Bristol Myers Squibb</h4>
+                        <p>Apr 2024 – Jul 2025</p>
+                        <ul>
+                            <li>Deployed ML models, improving forecast accuracy by 15% and driving $2M+ ROI.</li>
+                            <li>Automated analytics pipelines in Python, integrating 5+ global data sources.</li>
+                            <li>Increased efficiency by 25% using test-control design and predictive models.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Decision Analytics Associate, ZS Associates</h4>
+                        <p>Jul 2023 – Apr 2024</p>
+                        <ul>
+                            <li>Automated 4 ETL pipelines (SQL, R, Excel), speeding data extraction by 30%.</li>
+                            <li>Reduced manual reporting effort by 20% using R for statistical analysis.</li>
+                            <li>Developed 5+ interactive Tableau dashboards.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Summer Intern, Tata Steel Long Products</h4>
+                        <p>Jun 2022 – Aug 2022</p>
+                        <ul>
+                            <li>Improved power generation efficiency by 4.1% using regression models on time-series data.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3>Data Science & ML</h3>
+                    <ul>
+                        <li>Regression & Classification</li>
+                        <li>Predictive Modeling</li>
+                        <li>Time Series Forecasting</li>
+                        <li>Clustering</li>
+                        <li>LLM</li>
+                        <li>Deep Learning</li>
+                        <li>Quantitative Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category card">
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card card">
+                    <h3>Automated PCB Test Plan Generation</h3>
+                    <p class="project-date">Sep 2025</p>
+                    <ul>
+                        <li>Designed a Python-based pipeline for netlist parsing, BOM analysis, and LLM-driven test procedure generation.</li>
+                        <li>Accelerated PCB validation by producing ready-to-use Word test plans.</li>
+                    </ul>
+                </div>
+                <div class="project-card card">
+                    <h3>IoT-Based Automatic Vehicle Accident Detection and Rescue Model</h3>
+                    <p class="project-date">Aug 2022 – May 2023</p>
+                    <ul>
+                        <li>Developed an IoT system with GPS/GSM sensors and PySpark ML, achieving 18% higher accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:pshesadree151@gmail.com">pshesadree151@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: +1 (352) 328-1832</p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/p-shesadree" target="_blank">p-shesadree</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Shesadree Priyadarshani. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dynamically update the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
