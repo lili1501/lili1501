@@ -101,7 +101,7 @@ def main(pdf_path):
     portfolio_website = generate_html(summary)
     
     # Step 4: Save website
-    with open("portfolio.html", "w") as f:
+    with open("index.html", "w") as f:
         f.write(portfolio_website)
     
     print("Portfolio website generated successfully as index.html!")
