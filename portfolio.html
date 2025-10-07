@@ -1,0 +1,239 @@
+<!-- Okay, this sounds like a wonderful project! We'll create a clean, modern, and responsive portfolio website with a lovely pastel pink aesthetic, incorporating all the structural and content requirements.
+
+Here's the complete HTML and CSS code for your portfolio website.
+
+**`index.html`**
+
+```html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shesadree Priyadarshani - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Poppins for headings, Open Sans for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;4400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="https://via.placeholder.com/40" alt="Profile Image" class="profile-img-nav">
+            <a href="#home" class="nav-name">Shesadree Priyadarshani</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Fixed Social Media Sidebar -->
+    <aside class="social-sidebar">
+        <a href="https://linkedin.com/in/p-shesadree" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://github.com/p-shesadree" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </aside>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Shesadree Priyadarshani</span></h1>
+                <p>A Data Science and AI Solutions professional passionate about building impactful analytical models.</p>
+                <a href="#projects" class="btn primary-btn">View My Projects</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section common-section">
+            <div class="container">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div class="section-card">
+                        <h3>Education</h3>
+                        <div class="entry">
+                            <h4>Master’s in Applied Data Science</h4>
+                            <p><strong>University of Florida</strong> | Aug 2025 – May 2027</p>
+                            <p>Coursework: Advanced Machine Learning, Applied Data Science, AI Ethics.</p>
+                        </div>
+                        <div class="entry">
+                            <h4>B.Tech in Electrical Engineering</h4>
+                            <p><strong>National Institute of Technology Rourkela</strong> | Aug 2019 – May 2023</p>
+                            <p>GPA: 8.26/10.0</p>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <h3>Experience</h3>
+                        <div class="entry">
+                            <h4>Decision Analyst I – Data Science and AI solutions</h4>
+                            <p><strong>Bristol Myers Squibb, Hyderabad, India</strong> | Apr 2024 – Jul 2025</p>
+                            <ul>
+                                <li>Developed ML models, improving forecast accuracy by 15% and driving $2M+ ROI.</li>
+                                <li>Automated multi-channel analytics pipelines in Python, integrating 5+ global data sources.</li>
+                                <li>Increased efficiency by 25% using test-control design and predictive models.</li>
+                            </ul>
+                        </div>
+                        <div class="entry">
+                            <h4>Decision Analytics Associate – Multi-Channel Marketing</h4>
+                            <p><strong>ZS Associates, Pune, India</strong> | Jul 2023 – Apr 2024</p>
+                            <ul>
+                                <li>Engineered 4 ETL pipelines using SQL, R, and Excel, speeding data extraction by 30%.</li>
+                                <li>Reduced manual reporting effort by 20% with R for statistical analysis.</li>
+                                <li>Developed 5+ interactive Tableau dashboards.</li>
+                            </ul>
+                        </div>
+                        <div class="entry">
+                            <h4>Summer Intern - Increase WHRB-based power generation</h4>
+                            <p><strong>Tata Steel Long Products, Jamshedpur India</strong> | Jun 2022 – Aug 2022</p>
+                            <ul>
+                                <li>Improved power generation efficiency by 4.1% through time-series data analysis with regression models.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section common-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Automated PCB Test Plan Generation</h3>
+                        <p class="project-date">September 2025</p>
+                        <p>Designed a Python-based pipeline with LLM-driven interpretation to generate structured PCB test procedures, accelerating validation.</p>
+                        <!-- <a href="#" class="btn secondary-btn">Learn More</a> -->
+                    </div>
+                    <div class="project-card">
+                        <h3>IoT-Based Automatic Vehicle Accident Detection and Rescue Model</h3>
+                        <p class="project-date">August 2022 – May 2023</p>
+                        <p>Developed an IoT system using GPS/GSM sensors and PySpark ML, achieving 18% higher accuracy in accident detection.</p>
+                        <!-- <a href="#" class="btn secondary-btn">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section common-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>R</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Science & ML</h3>
+                        <ul>
+                            <li>Regression & Classification</li>
+                            <li>Predictive Modeling</li>
+                            <li>Time Series Forecasting</li>
+                            <li>Clustering</li>
+                            <li>LLM</li>
+                            <li>Deep Learning</li>
+                            <li>Quantitative Analysis</li>
+                            <li>Data-driven Recommendations</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Visualization</h3>
+                        <ul>
+                            <li>Tableau</li>
+                            <li>Power BI</li>
+                            <li>Excel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section common-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:pshesadree151@gmail.com">pshesadree151@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+1 (352) 328-1832</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <a href="https://linkedin.com/in/p-shesadree" target="_blank">linkedin.com/in/p-shesadree</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/p-shesadree" target="_blank">github.com/p-shesadree</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shesadree Priyadarshani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for responsive navigation toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            this.classList.toggle('is-active'); // For animating the hamburger icon
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                const mobileMenu = document.getElementById('mobile-menu');
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- ### How to Use:
+
+1.  **Create a Folder:** Make a new folder on your computer, e.g., `shesadree-portfolio`.
+2.  **`index.html`:** Inside this folder, create a file named `index.html` and paste the HTML code provided above into it.
+3.  **`style.css`:** Inside the same folder, create a file named `style.css` and paste the CSS code provided above into it.
+4.  **Profile Image:**
+    *   The navigation bar has a placeholder for a circular profile image: `<img src="https://via.placeholder.com/40" alt="Profile Image" class="profile-img-nav">`.
+    *   Replace `https://via.placeholder.com/40` with the actual path to your profile image (e.g., `images/profile.jpg`). Make sure to create an `images` folder and put your image there.
+5.  **Social Media Links:**
+    *   Update the `href` attributes in the social media sidebar (`aside.social-sidebar`) with your actual LinkedIn, Twitter, YouTube, GitHub, and Instagram profile URLs. I've pre-filled LinkedIn and GitHub based on your summary.
+6.  **Open in Browser:** Open the `index.html` file in your web browser.
+
+You now have a complete, responsive portfolio website! -->

@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Retrieve the API key
-api_key = os.getenv('GEMINI_API_KEY')
+api_key = os.getenv('GOOGLE_API_KEY')
 
 if api_key is None:
     raise ValueError("API key not found. Please set the GEMINI_API_KEY environment variable.")
