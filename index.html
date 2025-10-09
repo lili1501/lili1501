@@ -237,6 +237,15 @@
             <button id="send-btn" disabled><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
+    <footer style="text-align: center; padding: 20px; background-color: #FFABAB;">
+        <p id="copyright"></p>
+    </footer>
+    
+    <script>
+    const year = new Date().getFullYear();
+    document.getElementById("copyright").innerHTML =
+      `<span style="color: white;">&copy; ${year} Shesadree Priyadarshani. All rights reserved.</span>`;
+    </script>
 
     <script src="script.js"></script>
 </body>
