@@ -1,203 +1,243 @@
-<!-- Here's a complete HTML and CSS portfolio website for Shesadree Priyadarshani, designed according to your specifications.
-
-**Key Features Implemented:**
-
-*   **HTML & CSS Structure:** Full HTML (`index.html`) and CSS (`style.css`) files.
-*   **Sticky Navigation Bar:** At the top, with "Home, About, Experience, Projects, Skills, Contact" links, and a circular profile image placeholder next to the name.
-*   **Prominent Hero Section:** Large, centered heading, descriptive text, and a "View My Projects" call-to-action button.
-*   **Fixed Social Media Sidebar:** On the left, with Font Awesome icons for LinkedIn, Twitter, YouTube, GitHub, and Instagram.
-*   **Aesthetic Pink Pastel Color Scheme:** Used throughout for backgrounds, accents, and highlights.
-*   **Subtle Background:** A soft, light pink gradient covers the entire background.
-*   **Clean, Modern, and Professional Design:** Ensured with good typography, spacing, and use of soft shadows and transitions.
-*   **All Sections Included:** About, Education, Experience, Projects, Skills, and Contact, populated with the provided resume summary.
-*   **Fully Responsive:** Optimized for mobile devices, adjusting layouts for navigation, sidebar, and section content.
-
----
-
-### `index.html` (HTML File)
-
-```html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shesadree Priyadarshani - Portfolio</title>
+    <title>Shesadree Priyadarshani - AI & Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for magical and professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts for a clean font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav-brand">
-            <!-- Placeholder for profile image. Replace 'SP' with actual initials or upload an image. -->
-            <img src="https://via.placeholder.com/40/FFC0CB/FFFFFF?text=SP" alt="Profile Image of Shesadree Priyadarshani" class="profile-img-nav">
-            <a href="#home">Shesadree Priyadarshani</a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="professional_image.jpeg" alt="Shesadree Priyadarshani" class="profile-img">
+            <a href="#home" class="nav-brand">Shesadree Priyadarshani</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Fixed Social Media Sidebar -->
     <aside class="social-sidebar">
-        <a href="https://www.linkedin.com/in/p-shesadree" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-        <!-- Placeholder links for other social media. Replace '#' with actual URLs. -->
-        <a href="#" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank" aria-label="YouTube Channel"><i class="fab fa-youtube"></i></a>
-        <a href="#" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/p-shesadree-b066ab203/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/lili1501" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
     </aside>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Shesadree Priyadarshani</h1>
-                <p>Data Science Professional | ML Engineer | Analytics Expert</p>
-                <a href="#projects" class="btn">View My Projects</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Unlocking Insights with <span class="highlight-text">AI & Data Magic</span></h1>
+            <p class="hero-subtitle">Transforming complex data into intelligent solutions and impactful strategies.</p>
+            <a href="#projects" class="btn btn-primary">Explore My Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <!-- AI/ML/Hogwarts AI design elements -->
+        <div class="ai-elements">
+            <div class="neural-node node-1"></div>
+            <div class="neural-node node-2"></div>
+            <div class="neural-node node-3"></div>
+            <div class="magic-spark spark-1"></div>
+            <div class="magic-spark spark-2"></div>
+            <div class="magic-spark spark-3"></div>
+            <div class="hex-pattern"></div>
+        </div>
+    </section>
 
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <p>I am a highly motivated and skilled Data Science professional with a strong background in Electrical Engineering and a Master's in Applied Data Science from the University of Florida. My expertise lies in developing and deploying machine learning models, automating analytics pipelines, and delivering data-driven insights that drive significant business impact and ROI.</p>
-            <p>With experience at Bristol Myers Squibb and ZS Associates, I have a proven track record of improving forecast accuracy by 15%, enhancing data extraction efficiency by 30%, and creating interactive data visualizations. I am passionate about leveraging data to solve complex problems and create innovative solutions.</p>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Shesadree Priyadarshani is a passionate and innovative Data Scientist with a Master's in Applied Data Science from the University of Florida and a B.Tech in Electrical Engineering.
+            </p>
+            <p>
+                With a strong foundation in machine learning, statistical analysis, and data visualization, she excels at transforming complex data into actionable insights. Her expertise spans developing and deploying predictive models, automating analytical pipelines, and creating interactive dashboards to drive significant business impact.
+            </p>
+            <p>
+                She has a proven track record in optimizing forecast accuracy, generating significant ROI, and enhancing operational efficiency through data-driven strategies. Shesadree is dedicated to leveraging AI and cutting-edge data science techniques to solve real-world problems and enhance decision-making.
+            </p>
+            <p>
+                Her journey is fueled by curiosity and a commitment to continuous learning, always seeking to bridge the gap between raw data and strategic outcomes.
+            </p>
+            <p>
+                Beyond the algorithms, Shesadree is driven by a desire to contribute to innovative solutions that make a tangible difference in the technological landscape.
+            </p>
+        </div>
+    </section>
 
-        <section id="education" class="container">
-            <h2>Education</h2>
+    <!-- Experience Section (Roadmap Style) -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <h3>University of Florida</h3>
-                    <p>Master’s in Applied Data Science</p>
-                    <p><em>Aug 2025 – May 2027</em></p>
+                <div class="timeline-item left">
+                    <div class="timeline-content card">
+                        <h3>Decision Analyst I – Data Science and AI solutions</h3>
+                        <h4>Bristol Myers Squibb, Hyderabad, India</h4>
+                        <p>Developed and deployed Machine Learning models, including regression and predictive modeling, to assess ROI, retention, and sentiment, leading to a 15% improvement in forecast accuracy and generating over $2 million in ROI.</p>
+                        <p>Automated multi-channel analytics pipelines using Python libraries (pandas, NumPy, scikit-learn, ipywidgets), integrating more than 5 global data sources to enable interactive post-launch brand tracking.</p>
+                        <p>Applied test-control design and predictive models to precisely isolate causal impacts, resulting in a 25% increase in efficiency.</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>National Institute of Technology Rourkela</h3>
-                    <p>B.Tech in Electrical Engineering</p>
-                    <p><em>Aug 2019 – May 2023 | GPA: 8.26/10.0</em></p>
+                <div class="timeline-item right">
+                    <div class="timeline-content card">
+                        <h3>Decision Analytics Associate – Multi-Channel Marketing</h3>
+                        <h4>ZS Associates, Pune, India</h4>
+                        <p>Engineered and automated 4 ETL (Extract, Transform, Load) pipelines utilizing SQL, R, and Excel, which accelerated data extraction by 30%.</p>
+                        <p>Leveraged R for statistical analysis, effectively reducing manual reporting effort by 20% and providing enhanced client insights.</p>
+                        <p>Spearheaded the development of over 5 interactive Tableau dashboards to enable real-time data visualization and collaborated with cross-functional teams to synthesize insights for client stakeholders.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content card">
+                        <h3>Summer Intern - Increase WHRB-based power generation</h3>
+                        <h4>Tata Steel Long Products, Jamshedpur India</h4>
+                        <p>Analyzed time-series sensor data using regression models to diagnose operational inefficiencies.</p>
+                        <p>Implemented corrective measures that successfully improved power generation efficiency by 4.1%.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience" class="container">
-            <h2>Experience</h2>
+    <!-- Education Section (Roadmap Style) -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Bristol Myers Squibb, Decision Analyst I</h3>
-                    <p><em>Apr 2024 – Jul 2025</em></p>
-                    <ul>
-                        <li>Developed and deployed ML models improving forecast accuracy by 15% and driving $2M+ ROI.</li>
-                        <li>Automated analytics pipelines in Python, increasing efficiency by 25%.</li>
-                    </ul>
+                <div class="timeline-item right">
+                    <div class="timeline-content card">
+                        <h3>Master’s in Applied Data Science</h3>
+                        <h4>University of Florida</h4>
+                        <p><strong>Coursework:</strong> Advanced Machine Learning, Applied Data Science, Programming for DS, Mathematics for Data Science, AI Ethics</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>ZS Associates, Decision Analytics Associate</h3>
-                    <p><em>Jul 2023 – Apr 2024</em></p>
-                    <ul>
-                        <li>Engineered 4 ETL pipelines (SQL, R, Excel) for 30% faster data extraction.</li>
-                        <li>Used R for statistical analysis, reducing reporting effort by 20%.</li>
-                        <li>Developed 5+ interactive Tableau dashboards.</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Tata Steel Long Products, Summer Intern</h3>
-                    <p><em>Jun 2022 – Aug 2022</em></p>
-                    <ul>
-                        <li>Analyzed time-series data with regression models, improving power generation efficiency by 4.1%.</li>
-                    </ul>
+                <div class="timeline-item left">
+                    <div class="timeline-content card">
+                        <h3>B.Tech in Electrical Engineering</h3>
+                        <h4>National Institute of Technology Rourkela</h4>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="container">
-            <h2>Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Magical Creations<br>(Projects)</h2>
             <div class="project-grid">
-                <div class="project-card">
+                <div class="project-card card">
                     <h3>Automated PCB Test Plan Generation</h3>
-                    <p>Designed Python-based pipeline for netlist/BOM analysis and LLM-driven spec interpretation to generate structured PCB test plans, accelerating validation.</p>
-                    <p class="project-date"><em>Sep 2025</em></p>
+                    <p>Designed a Python-based pipeline that processes IPC-2581 netlists and performs Bill of Materials (BOM) analysis.</p>
+                    <p>Utilized Large Language Models (LLM) to interpret specifications, generating structured and traceable Printed Circuit Board (PCB) test procedures.</p>
+                    <p>Implemented advanced features like component-to-specification cross-referencing, chain-of-thought reasoning, and stepwise bring-up synthesis.</p>
+                    <p>This system produced ready-to-use Word test plans, significantly accelerating the validation process for complex PCB prototypes.</p>
                 </div>
-                <div class="project-card">
+                <div class="project-card card">
                     <h3>IoT-Based Automatic Vehicle Accident Detection and Rescue Model</h3>
-                    <p>Developed IoT-enabled system using GPS/GSM sensors and PySpark ML, achieving 18% higher accuracy.</p>
-                    <p class="project-date"><em>Aug 2022 – May 2023</em></p>
+                    <p>Developed an Internet of Things (IoT)-enabled system designed for automatic vehicle accident detection and rescue.</p>
+                    <p>Integrated GPS/GSM sensors with PySpark Machine Learning pipelines to process data.</p>
+                    <p>Automated an Arduino-based real-time alert system, achieving an 18% higher accuracy in accident detection.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="container">
-            <h2>Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Spellbook<br>(Skills)</h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>R</li>
-                    </ul>
+                <div class="skill-category card">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>SQL</span><span>R</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Data Science & ML</h3>
-                    <ul>
-                        <li>Regression & Classification</li>
-                        <li>Predictive Modeling</li>
-                        <li>Time Series Forecasting</li>
-                        <li>Clustering</li>
-                        <li>LLM</li>
-                        <li>Deep Learning</li>
-                        <li>Quantitative Analysis</li>
-                        <li>Data-driven Recommendations</li>
-                    </ul>
+                <div class="skill-category card">
+                    <h3><i class="fas fa-brain"></i> Data Science & ML</h3>
+                    <div class="skill-tags">
+                        <span>Regression & Classification</span><span>Predictive Modeling</span><span>Time Series Forecasting</span><span>Clustering</span><span>LLM</span><span>Deep Learning</span><span>Quantitative Analysis</span><span>Data-driven Recommendations</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Data Visualization</h3>
-                    <ul>
-                        <li>Tableau</li>
-                        <li>Power BI</li>
-                        <li>Excel</li>
-                    </ul>
+                <div class="skill-category card">
+                    <h3><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+                    <div class="skill-tags">
+                        <span>Tableau</span><span>Power BI</span><span>Excel</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="container">
-            <h2>Contact Me</h2>
-            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Connect with the Magic!<br>(Contact Me)</h2>
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i> Email: <a href="mailto:pshesadree151@gmail.com">pshesadree151@gmail.com</a></p>
-                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+13523281832">+1 (352) 328-1832</a></p>
-                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/p-shesadree" target="_blank">p-shesadree</a></p>
+                <!-- <p><i class="fas fa-phone"></i> Phone: +1 (352) 328-1832</p> -->
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/p-shesadree-b066ab203/" target="_blank">p-shesadree</a></p>
             </div>
-        </section>
-    </main>
+            <p class="contact-prompt">Feel free to send me a message directly:</p>
+            <form class="contact-form" action="mailto:pshesadree151@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 Shesadree Priyadarshani. All rights reserved.</p>
-    </footer>
+    <!-- Chatbot Button -->
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <h3>Shesadree's AI Assistant</h3>
+            <button class="chatbot-close" id="chatbot-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chat-message bot-message">
+                Hello! I'm Shesadree's AI assistant. How can I help you today?
+            </div>
+            <div class="chat-message bot-message bot-menu">
+                <p>You can ask me about:</p>
+                <button class="menu-option" data-query="about">About Shesadree</button>
+                <button class="menu-option" data-query="experience">Experience</button>
+                <button class="menu-option" data-query="education">Education</button>
+                <button class="menu-option" data-query="skills">Skills</button>
+                <button class="menu-option" data-query="projects">Projects</button>
+                <button class="menu-option" data-query="contact">Contact Info</button>
+                <button class="menu-option" data-query="other">Other (Ask a custom question)</button>
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="user-input" placeholder="Type your question..." disabled>
+            <button id="send-btn" disabled><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-<!-- ### How to Use:
-
-1.  **Save the HTML:** Save the content above into a file named `index.html`.
-2.  **Save the CSS:** Save the CSS content into a file named `style.css` in the **same directory** as `index.html`.
-3.  **Open `index.html`:** Open `index.html` in your web browser.
-
-**To Customize:**
-
-*   **Profile Image:** Replace `https://via.placeholder.com/40/FFC0CB/FFFFFF?text=SP` with the URL of your actual profile image.
-*   **Social Media Links:** Replace the `#` in the `href` attributes of the social media icons with your actual profile URLs.
-*   **Hero Background Image:** Change the `url()` in the `.hero` CSS rule to an image of your choice.
-*   **Content:** Feel free to expand on the descriptions in each section.
-*   **Colors:** Adjust the `--primary-pink`, `--accent-violet`, etc., variables in `:root` in `style.css` to fine-tune the color scheme. -->

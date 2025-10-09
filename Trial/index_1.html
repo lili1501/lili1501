@@ -1,0 +1,203 @@
+<!-- Here's a complete HTML and CSS portfolio website for Shesadree Priyadarshani, designed according to your specifications.
+
+**Key Features Implemented:**
+
+*   **HTML & CSS Structure:** Full HTML (`index.html`) and CSS (`style.css`) files.
+*   **Sticky Navigation Bar:** At the top, with "Home, About, Experience, Projects, Skills, Contact" links, and a circular profile image placeholder next to the name.
+*   **Prominent Hero Section:** Large, centered heading, descriptive text, and a "View My Projects" call-to-action button.
+*   **Fixed Social Media Sidebar:** On the left, with Font Awesome icons for LinkedIn, Twitter, YouTube, GitHub, and Instagram.
+*   **Aesthetic Pink Pastel Color Scheme:** Used throughout for backgrounds, accents, and highlights.
+*   **Subtle Background:** A soft, light pink gradient covers the entire background.
+*   **Clean, Modern, and Professional Design:** Ensured with good typography, spacing, and use of soft shadows and transitions.
+*   **All Sections Included:** About, Education, Experience, Projects, Skills, and Contact, populated with the provided resume summary.
+*   **Fully Responsive:** Optimized for mobile devices, adjusting layouts for navigation, sidebar, and section content.
+
+---
+
+### `index.html` (HTML File)
+
+```html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shesadree Priyadarshani - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for a clean font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <!-- Placeholder for profile image. Replace 'SP' with actual initials or upload an image. -->
+            <img src="https://via.placeholder.com/40/FFC0CB/FFFFFF?text=SP" alt="Profile Image of Shesadree Priyadarshani" class="profile-img-nav">
+            <a href="#home">Shesadree Priyadarshani</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="social-sidebar">
+        <a href="https://www.linkedin.com/in/p-shesadree" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Placeholder links for other social media. Replace '#' with actual URLs. -->
+        <a href="#" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" aria-label="YouTube Channel"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+    </aside>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Shesadree Priyadarshani</h1>
+                <p>Data Science Professional | ML Engineer | Analytics Expert</p>
+                <a href="#projects" class="btn">View My Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <p>I am a highly motivated and skilled Data Science professional with a strong background in Electrical Engineering and a Master's in Applied Data Science from the University of Florida. My expertise lies in developing and deploying machine learning models, automating analytics pipelines, and delivering data-driven insights that drive significant business impact and ROI.</p>
+            <p>With experience at Bristol Myers Squibb and ZS Associates, I have a proven track record of improving forecast accuracy by 15%, enhancing data extraction efficiency by 30%, and creating interactive data visualizations. I am passionate about leveraging data to solve complex problems and create innovative solutions.</p>
+        </section>
+
+        <section id="education" class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>University of Florida</h3>
+                    <p>Master’s in Applied Data Science</p>
+                    <p><em>Aug 2025 – May 2027</em></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>National Institute of Technology Rourkela</h3>
+                    <p>B.Tech in Electrical Engineering</p>
+                    <p><em>Aug 2019 – May 2023 | GPA: 8.26/10.0</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Bristol Myers Squibb, Decision Analyst I</h3>
+                    <p><em>Apr 2024 – Jul 2025</em></p>
+                    <ul>
+                        <li>Developed and deployed ML models improving forecast accuracy by 15% and driving $2M+ ROI.</li>
+                        <li>Automated analytics pipelines in Python, increasing efficiency by 25%.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>ZS Associates, Decision Analytics Associate</h3>
+                    <p><em>Jul 2023 – Apr 2024</em></p>
+                    <ul>
+                        <li>Engineered 4 ETL pipelines (SQL, R, Excel) for 30% faster data extraction.</li>
+                        <li>Used R for statistical analysis, reducing reporting effort by 20%.</li>
+                        <li>Developed 5+ interactive Tableau dashboards.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Tata Steel Long Products, Summer Intern</h3>
+                    <p><em>Jun 2022 – Aug 2022</em></p>
+                    <ul>
+                        <li>Analyzed time-series data with regression models, improving power generation efficiency by 4.1%.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Automated PCB Test Plan Generation</h3>
+                    <p>Designed Python-based pipeline for netlist/BOM analysis and LLM-driven spec interpretation to generate structured PCB test plans, accelerating validation.</p>
+                    <p class="project-date"><em>Sep 2025</em></p>
+                </div>
+                <div class="project-card">
+                    <h3>IoT-Based Automatic Vehicle Accident Detection and Rescue Model</h3>
+                    <p>Developed IoT-enabled system using GPS/GSM sensors and PySpark ML, achieving 18% higher accuracy.</p>
+                    <p class="project-date"><em>Aug 2022 – May 2023</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <ul>
+                        <li>Regression & Classification</li>
+                        <li>Predictive Modeling</li>
+                        <li>Time Series Forecasting</li>
+                        <li>Clustering</li>
+                        <li>LLM</li>
+                        <li>Deep Learning</li>
+                        <li>Quantitative Analysis</li>
+                        <li>Data-driven Recommendations</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
+            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:pshesadree151@gmail.com">pshesadree151@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+13523281832">+1 (352) 328-1832</a></p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/p-shesadree" target="_blank">p-shesadree</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Shesadree Priyadarshani. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- ### How to Use:
+
+1.  **Save the HTML:** Save the content above into a file named `index.html`.
+2.  **Save the CSS:** Save the CSS content into a file named `style.css` in the **same directory** as `index.html`.
+3.  **Open `index.html`:** Open `index.html` in your web browser.
+
+**To Customize:**
+
+*   **Profile Image:** Replace `https://via.placeholder.com/40/FFC0CB/FFFFFF?text=SP` with the URL of your actual profile image.
+*   **Social Media Links:** Replace the `#` in the `href` attributes of the social media icons with your actual profile URLs.
+*   **Hero Background Image:** Change the `url()` in the `.hero` CSS rule to an image of your choice.
+*   **Content:** Feel free to expand on the descriptions in each section.
+*   **Colors:** Adjust the `--primary-pink`, `--accent-violet`, etc., variables in `:root` in `style.css` to fine-tune the color scheme. -->

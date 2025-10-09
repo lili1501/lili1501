@@ -1,0 +1,599 @@
+/* ### `style.css` (CSS File)
+
+```css */
+/* Root Variables for Color Palette and Dimensions */
+:root {
+    --primary-pink: #FFC0CB; /* Classic Pink */
+    --light-pink: #FFD1DC; /* Light Pink */
+    --darker-pink: #E0BBE4; /* Lavender-ish Pink */
+    --accent-violet: #8A2BE2; /* Blue Violet for contrast */
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-gradient-start: #fce4ec; /* Very light pink */
+    --bg-gradient-end: #f8bbd0;   /* Slightly darker light pink */
+    --nav-height: 70px;
+    --sidebar-width: 60px;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    /* Soft gradient background */
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    min-height: 100vh; /* Ensure gradient covers full height */
+    padding-left: var(--sidebar-width); /* Space for fixed social media sidebar */
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent-violet);
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--text-light); /* Hero section heading */
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Underline effect for H2 titles */
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-pink);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: var(--accent-violet);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--accent-violet);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-pink);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width); /* Position after sidebar */
+    width: calc(100% - var(--sidebar-width)); /* Take remaining width */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-brand a {
+    color: var(--accent-violet);
+    margin-left: 10px;
+}
+
+.profile-img-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    border: 2px solid var(--primary-pink);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+/* Underline effect for nav links on hover/active */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-pink);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after { /* .active class can be added with JS for current section */
+    width: 100%;
+}
+
+/* Social Media Sidebar */
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--sidebar-width);
+    background-color: var(--primary-pink);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 10px 10px 0; /* Rounded right corners */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.social-sidebar a {
+    color: var(--text-light);
+    font-size: 1.8rem;
+    margin: 0.8rem 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: block; /* Ensure full clickable area */
+}
+
+.social-sidebar a:hover {
+    transform: scale(1.1);
+    color: var(--accent-violet); /* Hover color */
+}
+
+/* Main Content Padding */
+main {
+    padding-top: var(--nav-height); /* Space for sticky nav */
+}
+
+/* Hero Section */
+.hero {
+    min-height: calc(100vh - var(--nav-height)); /* Full viewport height minus nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Example background image with overlay for readability */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+    color: var(--text-light);
+    position: relative;
+    padding: 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for better contrast */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: var(--text-light);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: var(--accent-violet); /* Change color on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+    color: var(--text-light);
+}
+
+/* General Section Styling */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto; /* Add margin-top for spacing below previous section */
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Timeline Style (for Education & Experience) */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Vertical line for timeline */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--light-pink);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    width: 50%;
+    padding: 20px 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item:nth-child(odd) { /* Left side items */
+    left: 0;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.timeline-item:nth-child(even) { /* Right side items */
+    left: 50%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* Circle markers for timeline items */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-pink);
+    border: 4px solid var(--accent-violet);
+    border-radius: 50%;
+    top: 28px;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd)::before {
+    right: -10px; /* Position circle on the right of left items */
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -10px; /* Position circle on the left of right items */
+}
+
+.timeline-item h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent-violet);
+}
+
+.timeline-item p {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: var(--text-dark);
+}
+
+.timeline-item ul li {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--light-pink);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: var(--accent-violet);
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+.project-date {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: var(--light-pink);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-category h3 {
+    color: var(--accent-violet);
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    padding: 0;
+}
+
+.skill-category li {
+    background-color: var(--primary-pink);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto; /* Center skills and give vertical spacing */
+    border-radius: 20px;
+    display: inline-block; /* For better spacing and wrapping */
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.8rem;
+}
+
+.contact-info i {
+    color: var(--primary-pink);
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--darker-pink);
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .nav-links li {
+        margin-left: 1.5rem;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .container {
+        padding: 3rem 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 0; /* Remove sidebar padding on smaller screens */
+    }
+
+    .navbar {
+        width: 100%;
+        left: 0;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-brand {
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+        display: block; /* Make links full width */
+        width: 100%;
+    }
+
+    .social-sidebar {
+        width: 100%;
+        height: auto;
+        top: auto; /* Remove top positioning */
+        bottom: 0; /* Stick to bottom */
+        left: 0;
+        transform: translateY(0);
+        flex-direction: row; /* Arrange icons horizontally */
+        justify-content: center;
+        border-radius: 10px 10px 0 0; /* Rounded top corners */
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+    }
+    .social-sidebar a {
+        margin: 0 0.8rem; /* Horizontal spacing for icons */
+        font-size: 1.5rem;
+    }
+
+    main {
+        /* Adjust padding for larger navbar and bottom social sidebar */
+        padding-top: calc(var(--nav-height) + 50px);
+        padding-bottom: 60px; /* Space for sticky social bar at bottom */
+    }
+
+    .hero {
+        min-height: 70vh; /* Reduce hero height on mobile */
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Timeline responsiveness */
+    .timeline::before {
+        left: 20px; /* Adjust timeline bar position to the left */
+    }
+
+    .timeline-item {
+        width: 100%; /* Full width for items */
+        padding-left: 50px; /* Shift content to make space for line */
+        padding-right: 20px;
+        text-align: left; /* Align all items to the left */
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd) {
+        text-align: left; /* Override right alignment */
+        padding-right: 20px;
+    }
+
+    .timeline-item::before {
+        left: 10px; /* Adjust item circle position relative to new bar position */
+        right: auto;
+    }
+    .timeline-item:nth-child(odd)::before { /* Ensure all circles are on the left */
+        left: 10px;
+    }
+
+    .project-grid, .skills-grid {
+        grid-template-columns: 1fr; /* Single column for grids */
+    }
+
+    .skill-category li {
+        margin: 0.3rem; /* Tighter spacing for mobile skills */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    .profile-img-nav {
+        width: 30px;
+        height: 30px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .container {
+        padding: 2rem 1rem;
+    }
+}
+
